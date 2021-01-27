@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body onload="time()">
+	<input type="text" id="t">
+	<script type="text/javascript">
+		function time() {
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+			var p=document.getElementById("t");
+			p.value=h+":"+m+":"+s;
+			var k=setTimeout(time,500);
+		}
+	</script>
+</body>
+</html>

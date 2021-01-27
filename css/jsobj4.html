@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate sum</title>
+</head>
+<body>
+	Num1:<input type="number" name="n1" id="n1" required><br>
+	Num2:<input type="number" name="n2" id="n2" required><br>
+	<input type="submit" name="Sum" onclick="f()">
+	<script type="text/javascript">
+		function f() {
+			var n1=document.getElementById('n1').value;
+			var n2=document.getElementById('n2').value;
+			var sum=parseInt(n1)+parseInt(n2);
+			alert("The sum is :"+sum);
+		}
+	</script>
+</body>
+</html>
